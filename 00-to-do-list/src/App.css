@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  padding: 0;
+  width: 550px;
+  margin-top: 10%;
+}
+
+.animation {
+animation: editZoom 1s;
+}
+
+@keyframes editZoom {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
